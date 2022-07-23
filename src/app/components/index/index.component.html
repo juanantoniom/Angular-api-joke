@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row text-center">
+        <div class="col-xl-12 col-md-12 col-sm-12">
+            <h1>Api-Joke</h1> 
+            <img src="assets/joker-png.png" alt="joker-img" class="col-xl-12 col-md-12 col-sm-12" style="width:100px;">
+            <p class="mt-5">Choose your language</p>
+                
+                <label for="English">English</label><input type="radio" value="English"
+                 name="mylanguage"  (change)="getRadibuttonSelected($event)"  />
+                <span>&nbsp;&nbsp;&nbsp;</span>
+                <label for="Spanish">Spanish</label><input type="radio" value="Spanish"
+                 name="mylanguage" (change)="getRadibuttonSelected($event)" /> 
+            
+        <br/>
+        
+            <button (click)="getAllJokes()" class="btn btn-success mt-5 mb-3">Joke</button>
+            <p>{{ setup }}</p>
+            <p>{{ delivery }}</p>
+            <p>{{ joke }}</p>
+        </div>
+            
+        
+        
+    </div>
+    
+
+</div>
